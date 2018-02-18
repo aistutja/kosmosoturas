@@ -1,0 +1,185 @@
+#centruoti {
+    text-align: center;
+}
+
+.nav-item:hover {
+    background-color: #e1e6ea;
+    border-radius: 8px;
+}
+
+.pavadinimo_sriftas {
+    font-family: 'Pacifico', cursive;
+    font-size: 0.8em;
+
+}
+
+
+#countdown_clock,
+#liko {
+    background-color: lightgray;
+    border-radius: 8px;
+    max-width: 100%;
+    height: 30px;
+}
+
+#liko {
+    margin-top: 10px;
+}
+
+.img-responsive {
+    max-width: 100%;
+}
+
+#countdown_clock td,
+#liko td {
+    background-color: red;
+    padding: 5px;
+    color: white;
+    font-size: 1.7em;
+}
+
+#spec-pasiulymas {
+    border: 10px solid #00a8cf;
+    background-color: #1c2d65;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    color: yellow;
+    font-size: 1.2em;
+}
+
+.container-fluid {
+    background-color: yellow;
+}
+
+#baneris {
+    background-color: red;
+}
+
+#sveiki {
+    background-color: white;
+    padding: 20px;
+    border: 10px solid #fdffca;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+table {
+    border-spacing: 0.5rem;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+
+.formos_laukas_mazas {
+    width: 40px;
+}
+
+.kosmoso_uzsklanda {
+    background-color: #01172f;
+}
+
+#uzsakymo_formos_fonas {
+    background-color: yellow;
+}
+
+
+
+#uzsakymas {
+    border: 10px solid #00a8cf;
+    background-color: #2ecee1;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+#atsakymas {
+    width: 260px;
+    padding: 20px;
+    background-color: #ffffcc;
+    border-radius: 5px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#patvirtinimo-mygtukas {
+    display: none;
+}
+
+
+
+.remeliai {
+    border: 10px solid #fdffca;
+    background-color: white;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#restorano_reklama,
+#selfie {
+    padding: 15px;
+}
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #ebf9fa;
+    margin: 30% auto;
+    /* nuo virsaus */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+
+.close {
+    color: #aaa;
+    /*    float: left;*/
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    left: 50%;
+    top: 0;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pedute {
+    background-color: #e1e6ea;
+    padding: 15px;
+    color: grey;
+
+}

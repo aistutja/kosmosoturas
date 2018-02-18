@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Keliaukime į kosmosą</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="MANO.css">
+
+</head>
+
+
+
+
+<body>
+
+
+    <!--NAVIGACIJA VIRSUJE -- BOOTSTRAP NAVIGACIJOS MENIU -->
+
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+
+            <!--LOGOTIPAS IR KOMPANIJOS PAVADINIMAS. ONMOUSEOVER IR ONMOUSEOUT FUNKCIJOS (IMG PADIDEJA/SUMAZEJA) -->
+
+            <a class="navbar-brand" href="MANO.html"><img src="img/brand.png" width="30" height="30" alt="" style="margin-right:10px" onmouseover="bigLogo(this)" onmouseout="regularLogo(this)" ><span class="pavadinimo_sriftas"> KOSMOSO TURAS </span></a>
+
+            <!--SUSKLEISTAS MENIU MYGTUKAS -->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigacija" aria-controls="navigacija" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+            <!--NAVIGACIJOS MENIU ELEMENTAI -->
+
+            <div class="collapse navbar-collapse" id="navigacija">
+                <ul id="centruoti" class="nav navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="MANO.html">Pradžia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"> Užsisakykite</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"> Informacija skrydžiui</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Klausimai</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- TURINYS -->
+
+    <div class="container-fluid text-center">
+
+        <!-- PIRMA EILE -->
+        <!-- COLSPAN 12 -- "BANERIS" KOSMOSO PAVEIKSLIUKAS -->
+
+        <div class="row content">
+            <div class="col-sm-12 kosmoso_uzsklanda"><img src="img/kosmoso_baneris.jpg" class="img-responsive"></div>
+        </div>
+
+
+
+        <!-- ANTRA EILE -->
+        <!-- COLSPAN 8 -- LENTELE-->
+
+        <div id="uzsakymo_formos_fonas" class="row content">
+
+
+
+            <!--ONINPUT, ONCLICK FUNKCIJOS -->
+
+            <div class="col-sm-12 col-md-8">
+
+
+                <table id="uzsakymas">
+                    <tr>
+                        <td> Keliaujančių suaugusių asmenų (18-64 m.) skaičius:</td>
+                        <td> <input id="suaugusiu_sk" class="formos_laukas_mazas" type="number" min="1" max="10" oninput="skaiciuoti_kaina()" value="1"></td>
+                        <td>
+                            <p><i id="myBtn" class="material-icons" style="margin:10px; font-size:1.6em; ">help</i></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Keliaujančių vaikų (12-17 m.) skaičius:</td>
+                        <td> <input id="vaiku_sk" class="formos_laukas_mazas" type="number" min="0" max="10" oninput="skaiciuoti_kaina()" value="0"></td>
+
+                        <td><i id="myBtn2" class="material-icons" style="margin:10px;  font-size:1.6em">help</i></td>
+                    </tr>
+                    <tr>
+                        <td> Vakarienė kosmoso restorane "Galaktika" (750.00 EUR/asm.)</td>
+                        <td> <input id="vakariene" class="formos_laukas_mazas" type="number" min="0" max="10" oninput="skaiciuoti_kaina()" value="0"></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td> Apsilankymas kosmoso pramogų parke (3,000.00 EUR/asm.)</td>
+                        <td> <input id="pramogu_p" class="formos_laukas_mazas" type="number" min="0" max="10" oninput="skaiciuoti_kaina()" value="0"></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td> Ekskursija po kosmoso muziejų (500.00 EUR/asm.)</td>
+                        <td> <input id="muziejus" class="formos_laukas_mazas" type="number" min="0" max="10" oninput="skaiciuoti_kaina()" value="0"></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td> Pažymėkite, ar norėtumėte kelionės draudimo (50.00 EUR/asm.):</td>
+                        <td> <input type="checkbox"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td> Pažymėkite, ar norėtumėte pirmenybinio laipinimo (20.00 EUR/asm.):</td>
+                        <td> <input type="checkbox"></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+
+
+                <div id="atsakymas"> 0</div>
+
+                <button type="button" class="btn btn-danger btn-lg" onclick="perziureti_kaina()">Užsakyti
+          
+        </button>
+                <br/>
+                <br/>
+                <div id="patvirtinimo_forma">
+                    <div class="patvirtinimo_tekstas"></div>
+                    <div class="patvirtinimo_tekstas"></div>
+                    <div class="patvirtinimo_tekstas"></div>
+                    <div class="patvirtinimo_tekstas"></div>
+                    <div class="patvirtinimo_tekstas"></div>
+                    <div class="patvirtinimo_tekstas"></div>
+                    <button id="patvirtinimo-mygtukas" type="button" class="btn btn-default btn-sm" onclick="">Patvirtinti</button>
+                </div>
+
+            </div>
+
+
+            <!-- "?" PAZYMETU PRANESIMU LENTELES-->
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Norėdami užsakyti kelionę 10+ asmenų grupei kreipkitės tiesiogiai į pardavimai@kosmosoturas.com</p>
+                </div>
+            </div>
+
+            <div id="myModal_2" class="modal">
+                <div class="modal-content">
+                    <span class="close">B</span>
+                    <p> 12-17 metų vaikai turi keliauti lydimi bent vieno suaugusio asmens.</p>
+                </div>
+            </div>
+
+            <!-- ANTRA EILE -->
+            <!-- COLSPAN 4 -->
+            <!--PAVEIKSLAS DESINEJE - RESTORANAS-->
+
+            <div id="soniniai_stulpeliai" class="col-sm-6 col-md-4">
+                <div class="remeliai">
+
+                    <p><a href="#"><img id="restorano_reklama" src="img/horizontas.jpg" class="img-responsive"></a></p>
+                    <p>
+                        Nepamirštama vakarienė kosmoso restorane "Galaktika"
+                    </p>
+
+                    <button type="button" class="btn btn-info btn-sm" onclick="">Sužinoti daugiau <i class="material-icons">navigate_next</i>
+        </button>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+                <div class="remeliai">
+
+                    <p><a href="#"><img id="selfie" src="img/astronaut_selfie.jpg" class="img-responsive"></a></p>
+                    <p>
+                        Pasidarykite asmenukę atsiminimui!
+                    </p>
+
+                    <button type="button" class="btn btn-info btn-sm" onclick="">Sužinoti daugiau <i class="material-icons">navigate_next</i>
+        </button>
+                </div>
+            </div>
+
+
+            <div class="col-sm-6 col-lg-4">
+                <div class="remeliai">
+
+                    <p><a href="#"><img id="selfie" src="img/kosmoso_muziejus.jpg" class="img-responsive"></a></p>
+                    <p>
+                        Apsilankykite kosmoso stotyje-muziejuje
+                    </p>
+
+                    <button type="button" class="btn btn-info btn-sm" onclick="">Sužinoti daugiau <i class="material-icons">navigate_next</i>
+        </button>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-6 col-lg-4">
+                <div class="remeliai">
+
+                    <p><a href="#"><img id="selfie" src="img/berniukas.jpg" class="img-responsive"></a></p>
+                    <p>
+                        Neišdildomi įspūdžiai vaikams!
+                    </p>
+
+                    <button type="button" class="btn btn-info btn-sm" onclick="">Sužinoti daugiau <i class="material-icons">navigate_next</i>
+        </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!--FOOTER -->
+
+    <footer class="container-fluid text-center pedute">
+        <p>Web design by Aiste Zalubaite</p>
+    </footer>
+
+
+    <!-- BOOTSTRAP'o JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <!--Mano JavaScript -->
+
+    <script src="MANO.js">
+    </script>
+
+
+
+</body>
+</html>

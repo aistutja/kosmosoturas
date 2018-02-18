@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Keliaukime į kosmosą</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="MANO.css">
+</head>
+
+
+
+
+<body>
+
+
+    <!--NAVIGACIJA VIRSUJE -->
+
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+
+            <!--LOGOTIPAS IR KOMPANIJOS PAVADINIMAS. ONMOUSEOVER IR ONMOUSEOUT FUNKCIJOS (IMG PADIDEJA/SUMAZEJA) -->
+
+            <a class="navbar-brand" href="MANO.html"><img src="img/brand.png" width="30" height="30" alt="" style="margin-right:10px" onmouseover="bigLogo(this)" onmouseout="regularLogo(this)" ><span class="pavadinimo_sriftas"> KOSMOSO TURAS </span></a>
+
+            <!--SUSKLEISTAS MENIU MYGTUKAS -->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigacija" aria-controls="navigacija" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+            <!--MENIU ELEMENTAI -->
+
+            <div class="collapse navbar-collapse" id="navigacija">
+                <ul id="centruoti" class="nav navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Pradžia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="UZSISAKYKITE.html"> Užsisakykite</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"> Informacija skrydžiui</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Klausimai</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- TURINYS -->
+
+    <div class="container-fluid text-center">
+
+        <!-- PIRMA EILE -->
+        <!-- COLSPAN 12 -- "BANERIS" KOSMOSO PAVEIKSLIUKAS -->
+
+
+        <div class="row content">
+            <div class="col-sm-12 kosmoso_uzsklanda"><img src="img/kosmoso_baneris.jpg" class="img-responsive"></div>
+        </div>
+
+        <!-- ANTRA EILE -->
+        <!-- COLSPAN 8 -- ATGALINIS LAIKMATIS-->
+
+        <div id="baneris" class="row content">
+            <div class="col-md-8">
+
+                <table id="liko">
+                    <tr>
+                        <td>Artimiausias išvykimas 2017.12.30, 8:00 </td>
+
+                    </tr>
+                </table>
+
+
+                <table id="countdown_clock">
+
+                    <tr>
+                        <td> Liko:</td>
+                        <td id="days">60</td>
+                        <td>d.</td>
+                        <td></td>
+                        <td><span id="hours"> </span></td>
+                        <td>:</td>
+                        <td><span id="minutes"></span></td>
+                        <td>:</td>
+                        <td id="seconds">22</td>
+
+                    </tr>
+                </table>
+            </div>
+
+            <!-- COLSPAN 4 -- SPEC-PASIULYMAS-->
+
+            <div class="col-md-4">
+                <div id=spec-pasiulymas>
+                    TIK 200,000.00 EUR! VAIKAMS TIK 95,000.00 EUR!
+                </div>
+            </div>
+
+        </div>
+
+        <!-- TRECIA EILE -->
+        <!-- COLSPAN 7 -- SVEIKI-->
+
+        <div class="row content">
+
+            <div class="col-sm-7 text-left">
+                <div id="sveiki">
+                    <h2>Sveiki!</h2>
+
+                    <p> Esame kelionių agentūra "KOSMOSO TURAS", ir džiaugiamės, kad pirmą kartą Lietuvoje galime Jums pasiūlyti kelionę į kosmosą už itin patrauklią kainą! </p>
+
+                    <p>Ar žinojote, kad?</p>
+
+                    <ul>
+                        <li>Iki mėnulio yra 384 400 km, o kosmoso pradžia laikomas arba 80 km (JAV) arba 100 km (“Kármán line”) aukštis?</li>
+                        <li>Mūsų ervėlaiviai gali jus nuskraidinti iki kosmoso tik per 2 val. 15 min!</li>
+                        <li>Kosmose jau buvo 560 žmonių, dabar jūsų eilė!</li>
+                        <li>Mūsų parneriai - "Virgin Galactic" ir "NASA".</li>
+                    </ul>
+                </div>
+
+            </div>
+            
+              <!-- COLSPAN 5 -- MASYVAS. BESIKEICIANTYS PAVEIKSLIUKAI-->
+
+            <div class="col-sm-5">
+
+
+                <div class="remeliai">
+
+                    <p><img id="img_to_flip" src="img/rest5.jpg" class="img-responsive" /></p>
+                    <p>
+                        Nepamirštama vakarienė restorane "Galaktika"!
+                    </p>
+
+                    <button type="button" class="btn btn-info btn-sm" onclick="">Sužinoti daugiau <i class="material-icons">navigate_next</i>
+        </button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    
+       <!--FOOTER -->
+
+    <footer class="container-fluid text-center pedute">
+        <p>Web design by Aiste Zalubaite</p>
+    </footer>
+
+
+    <!-- BOOTSTRAP'o JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    
+    <!--Mano JavaScript -->
+
+     <script src="MANO.js"></script>
+    <script src="LAIKRODIS.js"></script>
+</body>
+</html>
