@@ -1,0 +1,2 @@
+# kosmosoturas
+JavaScript projektas
